@@ -7,7 +7,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/app:cached
       - ~/.zsh_history:/root/.bash_history  
     ports:
       - "4000:4000"
